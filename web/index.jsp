@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
-    Created on : Aug 1, 2019, 3:34:20 PM
-    Author     : Monir
+    Created on : Feb 10, 2020, 3:34:20 PM
+    Author     : Zafrul Hasan Khan
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -24,7 +24,7 @@
         <header>
             <!-- ======================================Navigation Bar================================================= -->
             <nav class="navbar navbar-expand-lg navStyle">
-                <a class="brand-navbar" href="#"><img src="images/blddrop.png" alt="Responsive image" height="60px">Blood Management</a>
+                <a class="brand-navbar" href="#"><img src="images/lo1.jpg" alt="Responsive image" height="120px">Blood Management</a>
                 <div class="collapse navbar-collapse" id="mainMenu">
                     <ul class="navbar-nav ml-auto navList">
                         <li class="nav-item active"><a href="#" class="nav-link"><i class="fas fa-home"></i>HOME<span class="sr-only">(current)</span></a></li>
@@ -50,7 +50,7 @@
         <div class="container register">
             <div class="row">
                 <div class="col-md-3 register-left">
-                    <img src="images/blddrop.png" alt=""/>
+                    <img src="images/blood.png" alt="" height="140" width="200"/>
                     <h3>Welcome</h3>
                     <p>The blood is red gold in time of saving a life!</p>
                     <a href="registration.jsp"><input type="submit" name="" value="Registration"/></a><br/>
