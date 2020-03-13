@@ -1,0 +1,93 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(33, 37, 41);
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    overflow-x: hidden;
+    line-height: 22px;
+}
+a, a:link, a:visited { 
+	color: #c20202; 
+	font-weight: normal; 
+	text-decoration: none; 
+	font-size: 14px; 
+}
+
+a:hover { 
+	text-decoration: none; 
+}
+
+a.more { 
+	display: inline-block; 
+	float: right; 
+	padding: 5px 24px 5px 0; 
+	text-decoration: none; 
+	font-weight: bold; 
+	background: url(../images/tooplate_more.png) no-repeat center right; 
+}
+
+a.more:hover { 
+	text-shadow: 1px 1px 1px #555; 
+}
+
+p { 
+	margin: 0 0 10px 0; 
+	padding: 0; 
+}
+a.brand-navbar {
+    color: white;
+    text-decoration: none;
+}
+a.brand-navbar:hover {
+    color: #15b000;
+    text-decoration: none;
+}
+.navbar
+{
+    background-color: #202986;
+}
+.navbar a {
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar .brand-navbar img:hover
+{
+    opacity: 0.7;
+}
+.navbar ul
+{
+padding: 0px 30px 0px 0px;
+}
+.navbar ul li a{
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.navbar ul li a .fas{
+    padding-right:5px; 
+    padding-left:5px; 
+}
+.navbar ul li a:hover{
+    color: #15b000;
+}
+.navbar ul li.active > a {
+    color: #15b000;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: 3px solid #15b000;
+    border-radius: 40px;
+}
+.iconStyle
+{
+    color: #15b000;
+}
