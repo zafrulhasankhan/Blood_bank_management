@@ -1,7 +1,7 @@
 <%-- 
     Document   : registrationsuccess
-    Created on : Aug 2, 2019, 10:19:33 PM
-    Author     : Monir
+    Created on : Feb 12, 2020, 10:19:33 PM
+    Author     : Zafrul Hasan Nasim
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

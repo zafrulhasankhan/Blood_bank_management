@@ -21,10 +21,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Monir
- */
+
 @WebServlet(name = "BBRegistrationController", urlPatterns = {"/BBRegistrationController"})
 public class BBRegistrationController extends HttpServlet {
 

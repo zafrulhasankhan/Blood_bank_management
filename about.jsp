@@ -1,8 +1,4 @@
-<%-- 
-    Document   : about
-    Created on : Aug 4, 2019, 12:53:36 PM
-    Author     : Monir
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

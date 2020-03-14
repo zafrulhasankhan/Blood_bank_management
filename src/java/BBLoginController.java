@@ -23,10 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author Monir
- */
+
 @WebServlet(name = "BBLoginController", urlPatterns = {"/BBLoginController"})
 public class BBLoginController extends HttpServlet {
 

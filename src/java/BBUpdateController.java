@@ -22,10 +22,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author Monir
- */
 @WebServlet(name = "BBUpdateController", urlPatterns = {"/BBUpdateController"})
 public class BBUpdateController extends HttpServlet {
 
