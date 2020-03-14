@@ -1,0 +1,97 @@
+<%-- 
+    Document   : news
+    Created on : Aug 25, 2019, 1:25:14 PM
+    Author     : Anika
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>News Headline</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style>
+            .bg-dark {
+                background-color: #a20808!important;
+            }
+            h1 {
+                color: #47319a !important;
+            }
+            h3 {
+                font-weight: 700 ;
+                color: #1f4363 !important;
+                font-size: 25px;
+                line-height: 33px;
+                text-decoration: none;
+            }
+
+            .fakeimg {
+                height: 200px;
+                background: none;
+                width: 100%;
+            }
+            .td-post-date {
+                color: #aaa;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            jQuery(document)
+                    .ready(
+                            function ($) {
+                                var url = 'https://newsapi.org/v2/top-headlines?'
+                                        + 'sources=bbc-news&'
+                                        + 'apiKey=7656601f3e794edb88b4fae5ec7ba553';
+                                var newsdata = "";
+                                $
+                                        .ajax({
+                                            url: url,
+                                            dataType: 'json',
+                                            success: function (data) {
+
+                                                //  for ( var k in data) {
+                                                data['articles']
+                                                        .forEach(function (
+                                                                element, index) {
+                                                            if (element['urlToImage'] != null) {
+                                                                newsdata += '<h3>'
+                                                                        + element['title']
+                                                                        + '</h3>';
+                                                                newsdata += '<h5>'
+                                                                        + element['description']
+                                                                        + '</h5>';
+                                                                newsdata += '<span class="td-post-date">'
+                                                                        + element['publishedAt']
+                                                                        + '</span>';
+                                                                newsdata += '<div class="fakeimg"><img src='
+                                                                        + element['urlToImage']
+                                                                        + ' width="75%" height="100%" alt="Not Loaded"></div>';
+                                                                newsdata += '<p>'
+                                                                        + element['content']
+                                                                        + '</p>';
+                                                                newsdata += '<a href=' + element['url'] + '>See More...</a><br><hr>';
+                                                            }
+                                                        });
+                                                //}
+                                                $('#news').html(newsdata);
+                                            }
+                                        });
+
+                            });
+        </script>
+    </body>
+</html>
